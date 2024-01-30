@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css%}
+    <link rel="stylesheet" href="{% static "css/style.css"%}">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+{% endblock %}
+
+{% block header %}
+    <div class="Logo">
+        <div>
+            <img src="{% static "img/Logo.png"%}" alt="">
+        </div>
+        <div class="cover-title">
+            Drums for Beginers
+        </div>
+    </div>
+    <div class="tagline">
+        <p>Открой в себе ритм музыки</p>
+    </div>
+    <img src="{% static "img/burger-bar.png"%}" alt="">
+{% endblock %}
+
+{% block main %}
+    <div class="cover-page">
+        <div class="cover-page-filter"></div>
+        <img src="{% static "img/Coverpage.jpg" %}" alt="">
+        <div class="cover-page-arrow">
+            <img src="{% static "img/down-arrow.png"%}" alt="">
+        </div>
+    </div>
+    <div class="drums-info">
+        <h2>Какие бывают барабаны</h2>
+        <div class="slide-line"></div>
+        <div class="swiper-block">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="slider-slide swiper-slide">
+                        <div class="slide-info">
+                            <h3> Барабанная установка </h3>
+                            <div class="slide-text">
+                                <p>	Самый стандартный вид ударного инструмента. В стандартной расстановке установки присутствуют такие барабаны как: бас-бочка, малый барабан, хай-хэт, три тома, тарелка «райд» и тарелка «крэш». Для барабанов существует множество дополнительный элементов, свойственных для определенных жанров музыки, например: Кардан (Двойная педаль для бас-барабана), Кавбелл (Похожий на коровий колокольчик) и множество других.</p>
+                            </div>
+                        </div>
+                        <div class="slide-img">
+                            <img src={% static "img/DrumInfo/Барабанная установка.png"%} alt="">
+                        </div>
+                    </div>
+                    <div class="slider-slide swiper-slide">
+                        <div class="slide-info">
+                            <h3> Барабанная установка </h3>
+                            <div class="slide-text">
+                                <p>	Самый стандартный вид ударного инструмента. В стандартной расстановке установки присутствуют такие барабаны как: бас-бочка, малый барабан, хай-хэт, три тома, тарелка «райд» и тарелка «крэш». Для барабанов существует множество дополнительный элементов, свойственных для определенных жанров музыки, например: Кардан (Двойная педаль для бас-барабана), Кавбелл (Похожий на коровий колокольчик) и множество других.</p>
+                            </div>
+                        </div>
+                        <div class="slide-img">
+                            <img src={% static "img/DrumInfo/Барабанная установка.png"%} alt="">
+                        </div>
+                    </div>
+                    <div class="slider-slide swiper-slide">
+                        <div class="slide-info">
+                            <h3> Барабанная установка </h3>
+                            <div class="slide-text">
+                                <p>	Самый стандартный вид ударного инструмента. В стандартной расстановке установки присутствуют такие барабаны как: бас-бочка, малый барабан, хай-хэт, три тома, тарелка «райд» и тарелка «крэш». Для барабанов существует множество дополнительный элементов, свойственных для определенных жанров музыки, например: Кардан (Двойная педаль для бас-барабана), Кавбелл (Похожий на коровий колокольчик) и множество других.</p>
+                            </div>
+                        </div>
+                        <div class="slide-img">
+                            <img src={% static "img/DrumInfo/Барабанная установка.png"%} alt="">
+                        </div>
+                    </div>
+                    <div class="slider-slide swiper-slide">
+                        <div class="slide-info">
+                            <h3> Барабанная установка </h3>
+                            <div class="slide-text">
+                                <p>	Самый стандартный вид ударного инструмента. В стандартной расстановке установки присутствуют такие барабаны как: бас-бочка, малый барабан, хай-хэт, три тома, тарелка «райд» и тарелка «крэш». Для барабанов существует множество дополнительный элементов, свойственных для определенных жанров музыки, например: Кардан (Двойная педаль для бас-барабана), Кавбелл (Похожий на коровий колокольчик) и множество других.</p>
+                            </div>
+                        </div>
+                        <div class="slide-img">
+                            <img src={% static "img/DrumInfo/Барабанная установка.png"%} alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination">
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="{% static "js/index.js" %}"></script>
+{% endblock js %}

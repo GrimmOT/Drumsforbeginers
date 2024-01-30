@@ -1,0 +1,137 @@
+body{
+    overflow-x: hidden;
+}
+header{
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    z-index: 1;
+}
+header img{
+    height: 50px;
+    margin-right: 15px;
+}
+.Logo{
+    display: flex;
+    align-items: center;
+}
+.tagline{
+    width: 98%;
+    color: white;
+    font-size: 38px;
+    font-weight: 600;
+    position: absolute
+}
+.tagline p{
+    text-align: center;
+}
+.cover-page{
+    overflow: hidden;
+    height: 100vh;
+}
+.cover-page-filter{
+    height: 100%;
+    width: 100%;
+    background: rgb(0,134,255);
+    background: linear-gradient(0deg, rgba(0,134,255,0) 26%, rgba(0,0,0,0.9360994397759104) 85%);
+    position: absolute;
+}
+.cover-page-arrow{
+    width: 98%;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: arrow-anim;
+    z-index: 2;
+}
+.cover-page-arrow img{
+    height: 100px;
+}
+
+@keyframes arrow-anim {
+    from{
+        bottom: 20px;
+    }
+    to{
+        bottom: 0px;
+    }
+}
+.drums-info::before{
+    content: "";
+    height: 70px;
+    width: 98vw;
+    background: rgb(19,19,19);
+    background: linear-gradient(0deg, rgba(19,19,19,1) 29%, rgba(0,134,255,0) 90%);
+    position: absolute;
+    top: -50px;
+
+}
+.drums-info{
+    height: 100vh;
+    background-color: rgb(19,19,19);
+    position: relative;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.drums-info h2{
+    width: 98vw;
+    color: rgb(162, 162, 162);
+    position: relative;
+    font-size: 50px;
+    padding-left: 30px;
+}
+.slide-line{
+    width: 93vw;
+    height: 3px;
+    background-color: grey;
+    margin-left: 30px;
+    border-radius: 3px;
+}
+.swiper{
+    width: 80vw !important;
+}
+.swiper-block{
+    padding: 0px 30px 0px 30px;
+}
+.swiper-wrapper{
+    padding: 0px 100px 0px 100px;
+    box-sizing: border-box !important; 
+}
+.slider-slide{
+    width: 70vw !important;
+    height: 80vh;
+    border-radius: 15px;
+    display: flex !important;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-left: 30px;
+
+}
+.slide-info{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.slide-info h3{
+    color: rgb(226, 226, 226);
+    font-size: 40px;
+    font-weight: 600;
+}
+.slide-text{
+    width: 90%;
+    color: white;
+    font-size: 27px;
+    padding-top: 15px;
+    color: rgb(177, 177, 177);
+    text-align: justify;
+}
+.swiper-button-prev, .swiper-button-next{
+    color: white;
+    content: "";
+}

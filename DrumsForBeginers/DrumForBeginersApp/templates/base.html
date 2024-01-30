@@ -1,0 +1,28 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% block css %}
+    {% endblock %}
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        {% block header %}
+            <div>
+                <img src="{% static 'img/right-arrow.png'%}" alt="">
+            </div>
+            <h2>Drums for Beginers</h2>
+        {% endblock %}
+    </header>
+    <main>
+        {% block main %}
+        {% endblock %}
+    </main>
+    {% block js %}
+    {% endblock %}
+</body>
+</html>
