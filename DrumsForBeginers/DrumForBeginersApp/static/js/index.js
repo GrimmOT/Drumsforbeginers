@@ -10,3 +10,12 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
       }
 });
+
+let burgerWrapper = document.querySelector(".burger-wrapper")
+let burgerBTN = document.querySelector(".burger-menu-btn")
+
+function burgerActive(){
+  burgerWrapper.classList.toggle("burger-menu-active")
+}
+
+burgerBTN.addEventListener("click", burgerActive)
