@@ -29,10 +29,12 @@
         <div class="cover-page-filter"></div>
         <img src="{% static "img/Coverpage.jpg" %}" alt="">
         <div class="cover-page-arrow">
-            <img src="{% static "img/down-arrow.png"%}" alt="">
+            <a href="#drums-info">
+                <img src="{% static "img/down-arrow.png"%}" alt="">
+            </a>
         </div>
     </div>
-    <div class="drums-info">
+    <div class="drums-info" id="drums-info">
         <h2>Какие бывают барабаны</h2>
         <div class="slide-line"></div>
         <div class="swiper-block">
@@ -40,9 +42,9 @@
                 <div class="swiper-wrapper">
                     <div class="slider-slide swiper-slide">
                         <div class="slide-info">
-                            <h3> Барабанная установка </h3>
+                            <h3> Акустическая установка </h3>
                             <div class="slide-text">
-                                <p>	Самый стандартный вид ударного инструмента. В стандартной расстановке установки присутствуют такие барабаны как: бас-бочка, малый барабан, хай-хэт, три тома, тарелка «райд» и тарелка «крэш». Для барабанов существует множество дополнительный элементов, свойственных для определенных жанров музыки, например: Кардан (Двойная педаль для бас-барабана), Кавбелл (Похожий на коровий колокольчик) и множество других.</p>
+                                <p>	Самый привычные барабаны. В обычной установке присутствуют такие барабаны как: бас-бочка, малый барабан, хай-хэт, три тома, тарелка «райд» и тарелка «крэш». Для барабанов существует множество дополнительный элементов, свойственных для определенных жанров музыки, например: Кардан (Двойная педаль для бас-бочки), Кавбелл (Похожий на коровий колокольчик) и множество других.</p>
                             </div>
                         </div>
                         <div class="slide-img">
@@ -51,13 +53,13 @@
                     </div>
                     <div class="slider-slide swiper-slide">
                         <div class="slide-info">
-                            <h3> Барабанная установка </h3>
+                            <h3> Электронная установка </h3>
                             <div class="slide-text">
-                                <p>	Самый стандартный вид ударного инструмента. В стандартной расстановке установки присутствуют такие барабаны как: бас-бочка, малый барабан, хай-хэт, три тома, тарелка «райд» и тарелка «крэш». Для барабанов существует множество дополнительный элементов, свойственных для определенных жанров музыки, например: Кардан (Двойная педаль для бас-барабана), Кавбелл (Похожий на коровий колокольчик) и множество других.</p>
+                                <p>Электронная установка очень похожа на акустическую, но все же имеет очень важные различия. В ней также присутствуют стандартные элементы, но сама установка работает с помощью электричества и передает звук в наушникик или на колонки. Такие барабаны подходят для тренировок дома</p>
                             </div>
                         </div>
                         <div class="slide-img">
-                            <img src={% static "img/DrumInfo/Барабанная установка.png"%} alt="">
+                            <img src={% static "img/DrumInfo/Электронная установка.png"%} alt="">
                         </div>
                     </div>
                     <div class="slider-slide swiper-slide">
@@ -83,11 +85,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination">
-                </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev" style="color: white;"></div>
+                <div class="swiper-button-next" style="color: white;"></div>
             </div>
+        </div>
+    </div>
+    <div class="exercise">
+        <div class="game-block" style="background-image: url({% static "img/game-img.png" %})">
+            <p> Прочитал - попробуй! <br> Веб-приложение барабанной установки</p>
+
         </div>
     </div>
 {% endblock %}
