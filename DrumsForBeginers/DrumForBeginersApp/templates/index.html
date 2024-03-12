@@ -21,16 +21,30 @@
     <div class="tagline">
         <p>Открой в себе ритм музыки</p>
     </div>
-    <div class="burger-wrapper burger-menu-active">
+    <div class="burger-wrapper">
         <div class="burger-menu-btn">
             <img src="{% static "img/burger-bar.png"%}" alt="">
         </div>
         <div class="burger-menu">
+            <div class="burger-menu-content">
+                <div class="burger-menu-block burger-block-active">
+                    <p>Главная страница</p> 
+                </div>
+                <div class="burger-menu-block">
+                    <p>Игровая страница</p> 
+                </div>
+                <div class="burger-menu-block">
+                    <p>Упражнения</p>
+                </div>
+            </div>
         </div>
+
     </div>
 {% endblock %}
 
 {% block main %}
+    <div class="burger-filter">
+    </div>
     <div class="cover-page">
         <div class="cover-page-filter"></div>
         <img src="{% static "img/Coverpage.jpg" %}" alt="">
