@@ -1,0 +1,43 @@
+body{
+    overflow-x: hidden;
+    background-color: rgb(19,19,19);
+}
+.transition{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+.transition:nth-child(1){
+    height: 70vh;
+    align-items: end;
+}
+.transition-block{
+    width: 100vw;
+    height: 400px;
+    overflow: hidden;
+    background-position: 25%;
+    background-repeat: no-repeat;
+    background-size: 1550px;
+}
+.transition-block p{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(50%) blur(4px);
+    text-align: center;
+    line-height: 100px;
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    transition-duration: 0.5s;
+}
+.transition-block p:hover{
+    backdrop-filter: brightness(40%) blur(5px);
+    font-size: 65px;
+    transition-duration: 0.5s;
+}
+.transition-block-subtitle{
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.668);
+    font-weight: 300;
+}

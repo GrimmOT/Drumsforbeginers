@@ -11,14 +11,3 @@ const swiper = new Swiper('.swiper', {
       }
 });
 
-let burgerWrapper = document.querySelector(".burger-wrapper")
-let burgerBTN = document.querySelector(".burger-menu-btn")
-let body = document.querySelector("body")
-
-
-function burgerActive(){
-  burgerWrapper.classList.toggle("burger-menu-active")
-  body.classList.toggle("disable-scroll")
-}
-
-burgerBTN.addEventListener("click", burgerActive)

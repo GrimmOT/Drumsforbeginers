@@ -8,16 +8,35 @@ def main_index(request):
 
 def index(request):
     context = {
-        "title": "Барабаны для всех!"
+        "title": "Барабаны для всех!",
+        "current_page": "index_page"
     }
     return render(request, 'index.html', context)
 
 def all_exercises(request):
-    return HttpResponse("Здесь будет переходная станичка на все упражнения!!!")
-
+    context = {
+        "title": "Упражнения",
+        "current_page": "all_ex"
+    }
+    return render(request, 'all-ex.html', context)
 
 def game_page(request):
-    return HttpResponse("Здесь будет ИГРА!!!")
+    context = {
+        "title": "Игра",
+        "current_page": "game_page"
+    }
+    return render(request, "game.html", context)
 
 def exercise_page(request):
-    return HttpResponse("Здесь будут упражнения")
+    context = {
+        "title": "Упражнения",
+        "current_page": "exercises_page"
+    }
+    return render(request, 'exsercise.html', context)
+
+def all_drums(request):
+    context = {
+        "title": "Все барабаны",
+        "current_page": "all_drums"
+    }
+    return render(request, 'all_drums.html', context)

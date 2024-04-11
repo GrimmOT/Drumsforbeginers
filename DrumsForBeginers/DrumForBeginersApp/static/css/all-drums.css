@@ -1,0 +1,10 @@
+body{
+    overflow-x: hidden;
+    background-color: #0F0F0F;
+}
+.soon-tag{
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    padding-top: 300px;
+}

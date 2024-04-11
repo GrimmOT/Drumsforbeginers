@@ -11,18 +11,58 @@
     <title>{{ title }}</title>
 </head>
 <body>
+
     <header>
         {% block header %}
+        <div class="Logo">
             <div>
-                <img src="{% static 'img/right-arrow.png'%}" alt="">
+                <a href="{% url 'index'%}"><img src="{% static "img/Logo.png"%}" alt=""></a>
             </div>
-            <h2>Drums for Beginers</h2>
-        {% endblock %}
+            <div class="cover-title">
+                <a href="{% url 'index'%}">Drums for Beginers</a> 
+            </div>
+        </div>
+        <div class="tagline">
+            {% block tagline_text %}
+                <p>Открой в себе ритм музыки</p>
+            {% endblock tagline_text %}
+        </div>
+        <div class="burger-wrapper">
+            <div class="burger-menu-btn">
+                <img src="{% static "img/burger-bar.png"%}" alt="">
+            </div>
+            <div class="burger-menu">
+                <div class="burger-menu-content">
+                    <div class="burger-menu-block {% if current_page == 'index_page' %}burger-block-active {% endif %}">
+                        <a href="{% url "index"%}">
+                            <p>Главная страница</p> 
+                        </a>
+                    </div>
+                    <div class="burger-menu-block {% if current_page == 'game_page' %}burger-block-active {% endif %}">
+                        <a href="{% url "game-page"%}">
+                            <p>Игровая страница</p> 
+                        </a>
+                    </div>
+                    <div class="burger-menu-block {% if current_page == 'all_ex' %}burger-block-active {% endif %}">
+                        <a href="{% url "all-ex"%}">
+                            <p>Упражнения</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="burger-filter">
+        </div>
+        {% endblock header %}
     </header>
+
     <main>
         {% block main %}
         {% endblock %}
     </main>
+
+    <script src="{% static "js/base.js"%}"></script>
     {% block js %}
     {% endblock %}
 </body>

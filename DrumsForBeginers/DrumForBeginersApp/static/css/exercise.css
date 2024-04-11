@@ -1,0 +1,84 @@
+body{
+    overflow-x: hidden;
+    background-color: rgb(19,19,19);
+}
+.cover-page{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: 25%;
+    background-repeat: no-repeat;
+    background-size: 1550px;
+}
+.cover-page-filter{
+    height: 100%;
+    width: 100%;
+    background: rgb(0,134,255);
+    background: linear-gradient(0deg, rgba(0,134,255,0) 26%, rgba(0,0,0,0.9360994397759104) 85%);
+    position: absolute;
+    top: 0px;
+}
+.page-name{
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    font-weight: 700;
+    text-align: center;
+    z-index: 0;
+
+}
+
+/* exersise */
+.exercise-block{
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ex-info{
+    width: 40%;
+    height: 60%;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;   
+}
+.line{
+    width: 1px;
+    height: 80%;
+    background-color: #8B8B8B;
+}
+.ex-video{
+    width: 40%;
+    height: 80%;
+}
+.note{
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 2;
+    display: flex;
+}
+.id-note{
+    display: flex;
+    align-self: end;
+}
+.note-content{
+    width: 150px;
+    height: 170px;
+    border-radius: 10px;
+    background-color: #4e4e4e;
+}
+
+.text{
+    width: 90vw;
+    height: 300px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-top: 100px;
+    padding: 0px 40px 0px 40px;
+}

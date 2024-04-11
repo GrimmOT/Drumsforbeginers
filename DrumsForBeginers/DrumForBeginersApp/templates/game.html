@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static "css/game.css"%}">
+{% endblock css %}
+
+{% block tagline_text %}
+    <p>Поиграй на настоящих барабанах!</p>
+{% endblock tagline_text %}
+
+
+{% block main %}
+    <div class="game-img"style="background-image: url({% static "img/Real_drums.png"%});">
+    </div>
+    <div class="drum-button" id="kick-size1">
+    </div>
+    <div class="drum-button" id="kick-size2">
+    </div>
+    <div class="drum-button" id="snaer-size">
+    </div>
+    <div class="drum-button" id="tom-one-size">
+    </div>
+    <div class="drum-button" id="tom-two-size">
+    </div>
+    <div class="drum-button" id="tom-three-size">
+    </div>
+    <div class="drum-button" id="tom-four-size">
+    </div>
+    <div class="drum-button" id="crash-size1">
+    </div>
+    <div class="drum-button" id="crash-size2">
+    </div>
+    <div class="drum-button" id="openHiHat-size">
+    </div>
+    <div class="drum-button" id="closeHiHat-size">
+    </div>
+    <div class="drum-button" id="ride-size">
+    </div>
+    <div class="drum-button" id="splash-size">
+    </div>
+    <div class="assets">
+        <audio src="{% static "audio/game-sounds/kick.wav" %}" id="kick-sound"></audio>
+        <audio src="{% static "audio/game-sounds/snare.wav" %}" id="snare-sound"></audio>
+        <audio src="{% static "audio/game-sounds/tom1.wav" %}" id="tom-one-sound"></audio>
+        <audio src="{% static "audio/game-sounds/tom2.wav" %}" id="tom-two-sound"></audio>
+        <audio src="{% static "audio/game-sounds/tom3.wav" %}" id="tom-three-sound"></audio>
+        <audio src="{% static "audio/game-sounds/tom4.wav" %}" id="tom-four-sound"></audio>
+        <audio src="{% static "audio/game-sounds/crash16d.wav" %}" id="crash16d-sound"></audio>
+        <audio src="{% static "audio/game-sounds/crash18d.wav" %}" id="crash18d-sound"></audio>
+        <audio src="{% static "audio/game-sounds/openHiHat.wav" %}" id="openHiHat-sound"></audio>
+        <audio src="{% static "audio/game-sounds/closeHiHat.wav" %}" id="closeHiHat-sound"></audio>
+        <audio src="{% static "audio/game-sounds/ride.wav" %}" id="ride-sound"></audio>
+        <audio src="{% static "audio/game-sounds/splash.wav" %}" id="splash-sound"></audio>
+    </div>
+{% endblock main %}
+
+
+{% block js %}
+    <script src="{% static "js/game.js"%}"></script>
+{% endblock js %}
+
+

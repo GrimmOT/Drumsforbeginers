@@ -1,0 +1,118 @@
+body{
+    overflow-x: hidden;
+    background-color: #0F0F0F;
+}
+header{
+    position: relative;
+}
+.game-img{
+    width: 100vw;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: relative;
+}
+.drum-button{
+    position: absolute;
+    border-radius: 50%;
+    /* background-color: red; */
+}
+.drum-button:hover{
+    cursor: pointer;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,0.2190126050420168) 0%, rgba(255,255,255,0) 62%);
+}
+
+/* drum-hitbox */
+#kick-size1{
+    height: 14vw;
+    width: 14vw;
+    bottom: 3.6vw;
+    left: 32.1vw;
+    z-index: 1;
+}
+#kick-size2{
+    height: 14vw;
+    width: 14vw;
+    bottom: 3.6vw;
+    right: 36.5vw;
+    z-index: 1;
+}
+#snaer-size{
+    height: 11vw;
+    width: 11vw;
+    bottom: 12vw;
+    right: 46vw;
+    z-index: 2;
+}
+#tom-one-size{
+    height: 9vw;
+    width: 9vw;
+    bottom: 21vw;
+    right: 47vw;
+    z-index: 3;
+}
+#tom-two-size{
+    height: 9vw;
+    width: 9vw;
+    bottom: 17.3vw;
+    right: 55vw;
+    z-index: 3;
+}
+#tom-three-size{
+    height: 9.5vw;
+    width: 9.5vw;
+    bottom: 17.3vw;
+    left: 52vw;
+    z-index: 3;
+}
+#tom-four-size{
+    height: 12vw;
+    width: 12vw;
+    bottom: 8.5vw;
+    right: 22.5vw;
+    z-index: 3;
+}
+#crash-size1{
+    height: 11vw;
+    width: 11vw;
+    bottom: 23.9vw;
+    right: 39.3vw;
+    z-index: 6;
+}
+#crash-size2{
+    height: 12vw;
+    width: 12vw;
+    bottom: 21vw;
+    left: 25vw;
+    z-index: 6;
+}
+#openHiHat-size{
+    height: 10vw;
+    width: 10vw;
+    bottom: 7.2vw;
+    left: 21vw;
+    z-index: 4;
+}
+#closeHiHat-size{
+    height: 10vw;
+    width: 10vw;
+    bottom: 14vw;
+    left: 23vw;
+    z-index: 5;
+}
+#ride-size{
+    height: 14vw;
+    width: 14vw;
+    bottom: 20.5vw;
+    right: 26vw;
+    z-index: 5;
+}
+#splash-size{
+    height: 9vw;
+    width: 9vw;
+    bottom: 25vw;
+    left: 37vw;
+    z-index: 5;
+}

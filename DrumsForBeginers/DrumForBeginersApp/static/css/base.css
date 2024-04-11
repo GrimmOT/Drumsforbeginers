@@ -14,8 +14,88 @@ header{
     justify-content: space-between;
     padding: 0 30 0 30;
 }
+header{
+    position: absolute;
+    z-index: 1;
+}
+header img{
+    height: 50px;
+    margin-right: 15px;
+}
+.Logo{
+    display: flex;
+    align-items: center;
+}
+.tagline{
+    width: 98%;
+    color: white;
+    font-size: 38px;
+    font-weight: 600;
+    position: absolute
+}
+.tagline p{
+    text-align: center;
+}
 .cover-title{
     width: 150px;
     color: white;
     font-size: 30px;
+}
+
+/* burger-menu */
+.burger-menu-btn{
+    position: relative;
+    right: 0;
+    transition-duration: 0.5s;
+}
+.burger-menu{
+    height: 100vh;
+    width: 350px;
+    background-color: rgb(36, 36, 36);
+    position: fixed;
+    top: 0;
+    right: -360px;
+    transition-duration: 0.5s;
+}
+.burger-wrapper{
+    position: relative;
+    z-index: 3;
+}
+.burger-menu-active .burger-menu{
+    right: 0;
+    transition-duration: 0.5s;
+}
+.disable-scroll{
+    overflow: hidden;
+}
+.burger-menu-active .burger-menu-btn{
+    right: 360px;
+    transition-duration: 0.5s;
+}
+.burger-menu-content{
+    color:rgb(162, 162, 162)
+}
+.burger-menu-block{
+    width: 100%;
+    height: 70px;
+    font-size: 30px;
+    padding-left: 15px;
+    margin-top: 30px;
+}
+.burger-block-active{
+    color: white;
+}
+.burger-filter{
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.burger-filter-toggle{
+    display: block;
 }

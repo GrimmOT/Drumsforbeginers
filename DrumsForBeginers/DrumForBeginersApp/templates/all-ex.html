@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css%}
+    <link rel="stylesheet" href="{% static "css/all-ex.css"%}">
+{% endblock %}
+
+{% block tagline_text %}
+    <p>Упражняйся до посинения</p>
+{% endblock tagline_text %}
+
+{% block main %}
+<div class="transition">
+    <div class="transition-block" style="background-image: url({% static "img/DrumStock.png" %})">
+        <a href="{% url "exercise-page" %}"><p> Упражнения для рук <br> <span class="transition-block-subtitle"> Рудименты, сбивки и тд.</span></p></a>
+    </div>
+</div>
+<div class="transition">
+    <div class="transition-block" style="background-image: url({% static "img/DrumStock2.jpg" %})">
+        <a href="{% url "exercise-page" %}"><p> Упражнения для ног <br> <span class="transition-block-subtitle"> Кардан, смещенные доли и тд.</span></p></a>
+    </div>
+</div>
+<div class="transition">
+    <div class="transition-block" style="background-image: url({% static "img/DrumStock3.jpg" %})">
+        <a href="{% url "exercise-page" %}">
+            <p> Упражнения ритма <br> <span class="transition-block-subtitle">Нечетные ритмы и упражнения под метроном</span></p>
+        </a>
+    </div>
+</div>
+{% endblock main %}
+
