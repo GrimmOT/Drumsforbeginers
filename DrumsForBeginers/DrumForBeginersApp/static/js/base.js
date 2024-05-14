@@ -11,3 +11,4 @@ function burgerActive(){
 }
 
 burgerBTN.addEventListener("click", burgerActive)
+

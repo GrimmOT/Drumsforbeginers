@@ -14,9 +14,11 @@ def index(request):
     return render(request, 'index.html', context)
 
 def all_exercises(request):
+    
     context = {
         "title": "Упражнения",
-        "current_page": "all_ex"
+        "current_page": "all_ex",
+        
     }
     return render(request, 'all-ex.html', context)
 

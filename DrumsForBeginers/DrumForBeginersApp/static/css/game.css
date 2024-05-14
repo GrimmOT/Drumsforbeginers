@@ -6,12 +6,12 @@ header{
     position: relative;
 }
 .game-img{
-    width: 100vw;
-    height: 90vh;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
+    display: flex;
+    justify-content: center;   
     position: relative;
+}
+.game-img img{
+    height: 90vh;
 }
 .drum-button{
     position: absolute;
@@ -28,91 +28,91 @@ header{
 #kick-size1{
     height: 14vw;
     width: 14vw;
-    bottom: 3.6vw;
-    left: 32.1vw;
+    bottom: 6vw;
+    left: 32vw;
     z-index: 1;
 }
 #kick-size2{
     height: 14vw;
     width: 14vw;
-    bottom: 3.6vw;
-    right: 36.5vw;
+    bottom: 6vw;
+    right: 36.9vw;
     z-index: 1;
 }
 #snaer-size{
     height: 11vw;
     width: 11vw;
-    bottom: 12vw;
-    right: 46vw;
+    bottom: 14.5vw;
+    right: 46.3vw;
     z-index: 2;
 }
 #tom-one-size{
     height: 9vw;
     width: 9vw;
-    bottom: 21vw;
-    right: 47vw;
+    bottom: 23.4vw;
+    right: 47.5vw;
     z-index: 3;
 }
 #tom-two-size{
     height: 9vw;
     width: 9vw;
-    bottom: 17.3vw;
-    right: 55vw;
+    bottom: 19.7vw;
+    right: 56.5vw;
     z-index: 3;
 }
 #tom-three-size{
     height: 9.5vw;
     width: 9.5vw;
-    bottom: 17.3vw;
-    left: 52vw;
+    bottom: 19.5vw;
+    left: 51.5vw;
     z-index: 3;
 }
 #tom-four-size{
     height: 12vw;
     width: 12vw;
-    bottom: 8.5vw;
-    right: 22.5vw;
+    bottom: 10.3vw;
+    right: 23.2vw;
     z-index: 3;
 }
 #crash-size1{
     height: 11vw;
     width: 11vw;
-    bottom: 23.9vw;
-    right: 39.3vw;
+    bottom: 27vw;
+    right: 39.9vw;
     z-index: 6;
 }
 #crash-size2{
     height: 12vw;
     width: 12vw;
-    bottom: 21vw;
-    left: 25vw;
+    bottom: 23vw;
+    left: 24.5vw;
     z-index: 6;
 }
 #openHiHat-size{
     height: 10vw;
     width: 10vw;
-    bottom: 7.2vw;
-    left: 21vw;
+    bottom: 9.5vw;
+    left: 20.5vw;
     z-index: 4;
 }
 #closeHiHat-size{
     height: 10vw;
     width: 10vw;
-    bottom: 14vw;
-    left: 23vw;
+    bottom: 17vw;
+    left: 22.5vw;
     z-index: 5;
 }
 #ride-size{
     height: 14vw;
     width: 14vw;
-    bottom: 20.5vw;
-    right: 26vw;
+    bottom: 23vw;
+    right: 26.5vw;
     z-index: 5;
 }
 #splash-size{
     height: 9vw;
     width: 9vw;
-    bottom: 25vw;
-    left: 37vw;
+    bottom: 27vw;
+    left: 35.6vw;
     z-index: 5;
 }
