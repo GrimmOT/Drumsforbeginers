@@ -36,6 +36,20 @@ def exercise_page(request):
     }
     return render(request, 'exsercise.html', context)
 
+def exercise1_page(request):
+    context = {
+        "title": "Упражнения",
+        "current_page": "exercise1_page"
+    }
+    return render(request, 'exercise1.html', context)
+
+def exercise2_page(request):
+    context = {
+        "title": "Упражнения",
+        "current_page": "exercise2_page"
+    }
+    return render(request, 'exercise2.html', context)
+
 def all_drums(request):
     context = {
         "title": "Все барабаны",

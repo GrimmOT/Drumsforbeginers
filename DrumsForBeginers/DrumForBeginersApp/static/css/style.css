@@ -39,7 +39,6 @@ body{
         bottom: 0px;
     }
 }
-
 .drums-info::before{
     content: "";
     height: 70px;
@@ -187,7 +186,23 @@ body{
     background-position: 25%;
     background-repeat: no-repeat;
     background-size: 1550px;
+    transition-duration: 0.3s;
+    position: relative;
 }
+.transition-block:hover{
+    background-size: 105%; 
+    transition-duration: 0.3s;
+}
+.transition-block:hover .anim-sticks{
+    bottom: -1000;
+    transition-duration: 0.4s;
+}
+.anim-sticks{
+    position: absolute;
+    bottom: -1200px;
+    transition-duration: 0.4s;
+}
+
 .transition-block p{
     width: 100%;
     height: 100%;

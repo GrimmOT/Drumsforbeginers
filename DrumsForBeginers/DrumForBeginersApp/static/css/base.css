@@ -25,6 +25,7 @@ header img{
 .Logo{
     display: flex;
     align-items: center;
+    z-index: 2;
 }
 .tagline{
     width: 98%;
