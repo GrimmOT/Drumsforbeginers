@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static "css/exercise.css"%}">
+    <link rel="stylesheet" href="{% static "css/exercise-base.css"%}">
+{% endblock css %}
+
+{% block tagline_text %}
+    <p>Упражняйся до посинения</p>
+{% endblock tagline_text %}
+
+{% block main %}
+    <div class="cover-page" style="background-image: url({% static "img/DrumStock4.jpg" %});">
+        <div class="cover-page-filter"></div>
+        <p class="page-name">
+            Основы игры на барабанах
+        </p>
+    </div>
+    <div class="Sticks">
+        <h2>Барабанные палочки</h2>
+        <div class="stick-line"></div>
+        <div class="stick-tagline">
+            <p>Барабанные палочки... Казалось бы, палки как палки, но их правильное использование имеет множество нюансов, сразу непонятных новичкам</p>
+        </div>
+        <div class="stick-links">
+            <div class="link">
+                <a href=""><p>
+                    Различные хваты палочек
+                </p></a>
+            </div>
+            <div class="link">
+                <a href=""><p>
+                    Виды и материалы палочек
+                </p></a>
+            </div>
+            <div class="link">
+                <a href=""><p>
+                    Правильный удар по барабанам
+                </p></a>
+            </div>
+        </div>
+    </div>
+{% endblock main %}

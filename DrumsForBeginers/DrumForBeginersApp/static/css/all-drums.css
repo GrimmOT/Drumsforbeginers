@@ -2,9 +2,21 @@ body{
     overflow-x: hidden;
     background-color: #0F0F0F;
 }
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.soon-img{
+    margin-top: 130px;
+    height: 100px;
+}
+.soon-img img{
+    height: 400px;
+}
 .soon-tag{
     color: white;
     text-align: center;
-    font-size: 70px;
+    font-size: 55px;
     padding-top: 300px;
 }

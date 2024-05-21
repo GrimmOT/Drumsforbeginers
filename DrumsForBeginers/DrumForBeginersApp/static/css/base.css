@@ -100,3 +100,35 @@ header img{
 .burger-filter-toggle{
     display: block;
 }
+
+/* footer */
+footer{
+    width: 100vw;
+    height: 30vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:white;
+}
+footer .Logo img{
+    height: 60px;
+}
+footer .Logo{
+    width: 15vw;
+    display: flex;
+    justify-content: space-between;
+}
+.web-info{
+    color: #c4c4c4;
+    font-size: 20px;
+}
+.web-info h1{
+    color: #ffffff;
+    font-size: 30px;
+}
+.footer-tagline{
+    width: 30%;
+    font-size: 25px;
+    text-align: justify;
+}

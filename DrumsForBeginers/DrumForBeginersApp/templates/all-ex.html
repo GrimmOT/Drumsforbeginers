@@ -11,6 +11,12 @@
 
 {% block main %}
 <div class="transition">
+    <div class="transition-block" style="background-image: url({% static "img/DrumStock4.jpg" %})">
+        <a href="{% url "base-exercise-page" %}"><p> Основы игры на барабанах </p></a>
+    </div>
+</div>
+<div class="line"></div>
+<div class="transition">
     <div class="transition-block" style="background-image: url({% static "img/DrumStock.png" %})">
         <a href="{% url "exercise-page" %}"><p> Упражнения для рук <br> <span class="transition-block-subtitle"> Рудименты, сбивки и тд.</span></p></a>
     </div>

@@ -29,6 +29,13 @@ def game_page(request):
     }
     return render(request, "game.html", context)
 
+def baseExercise_page(request):
+    context = {
+        "title": "Упражнения",
+        "current_page": "base-exercise-page"
+    }
+    return render(request, "exercise-base.html", context)
+
 def exercise_page(request):
     context = {
         "title": "Упражнения",

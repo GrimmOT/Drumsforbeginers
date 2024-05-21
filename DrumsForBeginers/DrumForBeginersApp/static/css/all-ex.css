@@ -10,7 +10,9 @@ body{
 }
 .transition:nth-child(1){
     height: 70vh;
+    display: flex;
     align-items: end;
+    background-size: 1250px;
 }
 .transition-block{
     width: 100vw;
@@ -40,4 +42,11 @@ body{
     font-size: 40px;
     color: rgba(255, 255, 255, 0.668);
     font-weight: 300;
+}
+.line{
+    width: 92vw;
+    height: 2.5px;
+    background-color: #A2A2A2;
+    margin: 7vh 0px 15vh 3vw;
+    border-radius: 3px;
 }

@@ -172,12 +172,12 @@ body{
     margin-top: 15px;
 }
 
+/* transition */
 .transition{
     height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
-
 }
 .transition-block{
     width: 100vw;
@@ -202,7 +202,6 @@ body{
     bottom: -1200px;
     transition-duration: 0.4s;
 }
-
 .transition-block p{
     width: 100%;
     height: 100%;

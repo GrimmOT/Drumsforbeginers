@@ -51,8 +51,7 @@
 {% endblock %} {% endcomment %}
 
 {% block main %}
-
-    <div class="cover-page">
+    <div class="cover-page" id="cover-page">
         <div class="cover-page-filter"></div>
         <img src="{% static "img/Coverpage.jpg" %}" alt="">
         <div class="cover-page-arrow">
@@ -102,6 +101,17 @@
                     </div>
                     <div class="slider-slide swiper-slide">
                         <div class="slide-info">
+                            <h3> Кардан </h3>
+                            <div class="slide-text">
+                                <p>	Кардан - это не полноценный барабан, а элемент, которым можно дополнить обычную или электронную ударнные установки. Кардан представляет из себя двойную педаль для бас-барабана, которая поможет вам ускорить удары ваших ног и разнообразить рисунки и ритмы. </p>
+                            </div>
+                        </div>
+                        <div class="slide-img">
+                            <img src={% static "img/DrumInfo/Кардан.png"%} alt="">
+                        </div>
+                    </div>
+                    <div class="slider-slide swiper-slide">
+                        <div class="slide-info">
                             <h3> Литавры </h3>
                             <div class="slide-text">
                                 <p> Литавры представляют собой систему от двух до семи металлических котлообразных чаш, открытая сторона которых затянута кожей или пластиком, а нижняя часть может иметь отверстие. С помощью педали можно натягивать пластик, тем самым меняя тон инструмента. Чаще всего используются в оркестрах	
@@ -114,7 +124,7 @@
                     </div>
                     <div class="slider-slide swiper-slide">
                         <div class="more"> 
-                            <a href="{% url "all-drums" %}"><h3>Больше интесеных барабанов...</h3></a> 
+                            <a href="{% url "all-drums" %}"><h3>Больше интересных барабанов...</h3></a> 
                         </div>
                     </div>
                 </div>
@@ -177,7 +187,7 @@
     <div class="transition">
         <div class="transition-block" style="background-image: url({% static "img/DrumStock.png" %})">
             <a href="{% url "all-ex" %}"><p> Попробовал - научись! <br> <span class="transition-block-subtitle">Упражнения для освоения ударной установки</span></p></a> 
-        </div>
+    </div>
 {% endblock %}
 
 {% block js %}
